@@ -39,7 +39,7 @@ startGame();
 
 function startGame() {
   h1=document.querySelector('h1');
-  h1.style.background="steelblue";
+  h1.style.background='#353232';
   document.querySelector('.finishGame').style.display = "none";
   document.querySelector('.finishGame .text').innerText ="";
   document.querySelector('.chooseSymbol').style.display = "inline-block";

@@ -1,62 +1,107 @@
 <!DOCTYPE html>
-
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Tic Tac Toe</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+ <title>TIC TAC TOE</title>
     
 </head>
+  <body>
 
-<body>
-	<h1>Tic Tac Toe 
+  <div class="header-rectangle">
+<h1 class="whiteheadline">Tic Tac Toe 
         <br>
         <span id="display"></span> 
         <br>
      Game</h1>
-    <div id="stripe">
-<!--     	<button id="new">New Colors</button> -->
-    	
-        	<div class="finishGame">
-			<span class="text"></span>
-			</div>
-    
-			<button onClick="startGame()">Replay</button>
+   <div id="button">
 
-       
-        <div class="chooseSymbol">
-       		 <span>Choose Symbol:</span>
-      <button onClick="chooseSymbol('X')">X</button>
-      <button onClick="chooseSymbol('O')">O</button>
- 	</div>
-        
-       
-       
-    </div>
+      <div class="finishGame">
+
+      <span class="text"></span>
+
+      </div>
+
+      <button onClick="startGame()" class="xyz"><span>Replay</span></button>
+          <div class="chooseSymbol">
+           <span class="xy">Choose Symbol:</span>
+      <button onClick="chooseSymbol('X')" class="xyz"><span>X</span>
+              <br>
+                  (For first turn)
+              </br>
+      </button>
+      <button onClick="chooseSymbol('O')" class="xyz"><span>O</span>
+              <br>
+                  (For second turn)
+              </br>
+      </button>
 
 
-    <div class="container">
-    	<table>
-		<tr>
-			<td class="Squares" id="0"></td>
-			<td class="Squares" id="1"></td>
-			<td class="Squares" id="2"></td>
-		</tr>
-		<tr>
-			<td class="Squares" id="3"></td>
-			<td class="Squares" id="4"></td>
-			<td class="Squares" id="5"></td>
-		</tr>
-		<tr>
-			<td class="Squares" id="6"></td>
-			<td class="Squares" id="7"></td>
-			<td class="Squares" id="8"></td>
-		</tr>
-	</table>
+  </div>
+  </div>
 
-    </div>
-	
-  <script  src="script.js" ></script>
-</body>
+</div>
+
+  <div id="header-bg" align="center">
+
+  <div class="section">
+
+
+    <table class="table_overlay">
+    <tr>
+      <td id="square_one_text" class="text"></td>
+      <td id="square_two_text" class="text"></td>
+      <td id="square_three_text" class="text"></td>
+    </tr>
+    <tr>
+       <td id="square_four_text" class="text"></td>
+       <td id="square_five_text" class="text"></td>
+       <td id="square_six_text" class="text"></td>
+    </tr>
+    <tr>
+       <td id="square_seven_text" class="text"></td>
+       <td id="square_eight_text" class="text"></td>
+       <td id="square_nine_text" class="text"></td>
+    </tr>
+  </table>
+
+<div class="board">
+  <table>
+    <tr>
+      <td class="Squares" id="0"></td>
+ 
+       <td class="Squares" id="1"></td>
+
+       <td class="Squares" id="2"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="3"></td>
+       <td class="Squares" id="4"></td>
+       <td class="Squares" id="5"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="6"></td>
+       <td class="Squares" id="7"></td>
+       <td class="Squares" id="8"></td>
+    </tr>
+
+
+  </table> 
+</div>
+  
+
+</div>
+
+
+  </div>
+
+
+  
+    <script  src="script.js" ></script>
+
+  </body>
 </html>
