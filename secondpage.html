@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pizza/0.2.1/css/pizza.min.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pizza/0.2.1/js/pizza.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+     <link rel="stylesheet" href="secondpage.css">
+ <title>TIC TAC TOE</title>
+    
+</head>
+  <body>
+
+  <div class="header-rectangle">
+
+  <h1 class="whiteheadline">TIC TAC TOE GAME</h1>
+   <a href="tictactoe.html">First Page</a>
+    <div class="container">
+  <div class="row">
+    <div class="col-8">
+
+        <div class="input-group mb-3" style="margin-left: 180px">
+          <input type="number" class="form-control" placeholder="ENTER THE NUMBER N" aria-label="Recipient's username" aria-describedby="button-addon2" name="number of times" id="myInput">
+          <div class="input-group-append">
+            <button class="btn btn-info" type="button" id="button-addon2" onClick="getInputValue()">Calculate</button>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+
+
+  <div id="header-bg" class="results" align="center">
+
+  <main>    
+<h3> When Player 2 Chooses first chance at Position 2</h3>
+  <div class="left">
+               
+               
+
+<div class="board">
+  <table class="table_x">
+    <tr>
+      <td class="Squares" id="0">X</td>
+ 
+       <td class="Squares" id="1">O</td>
+
+       <td class="Squares" id="2"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="3"></td>
+       <td class="Squares" id="4"></td>
+       <td class="Squares" id="5"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="6"></td>
+       <td class="Squares" id="7"></td>
+       <td class="Squares" id="8"></td>
+    </tr>
+
+
+  </table> 
+</div>
+  </div>
+             <div class="left">
+
+               <div class="container">
+    <div class="table-responsive">
+    <table class="table table-bordered   table-striped">
+      <thead class="table__head">
+        <tr class="winner__table">
+          <th>Player</th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Number of games</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Wins </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Lose </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Tie</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Winning Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="winner__table">
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+  
+        </tr>
+
+        <tr class="winner__table" class="row2">
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+
+         
+        </tr>
+            
+          </tbody>
+    </table>
+    </div>
+  </div>
+              </div>
+              
+      
+</main>
+
+
+  </div>
+
+
+  <div id="header-bg" class="results" align="center">
+
+  <main>    
+
+  <div class="left">
+               
+               
+
+<div class="board">
+  <table class="table_x">
+    <tr>
+      <td class="Squares" id="0"></td>
+ 
+       <td class="Squares" id="1"></td>
+
+       <td class="Squares" id="2"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="3"></td>
+       <td class="Squares" id="4"></td>
+       <td class="Squares" id="5"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="6"></td>
+       <td class="Squares" id="7"></td>
+       <td class="Squares" id="8"></td>
+    </tr>
+
+
+  </table> 
+</div>
+  </div>
+             <div class="left">
+
+               <div class="container">
+    <div class="table-responsive">
+    <table class="table table-bordered   table-striped">
+      <thead class="table__head">
+        <tr class="winner__table">
+          <th>Player</th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Number of games</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Wins </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Lose </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Tie</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Winning Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="winner__table">
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+  
+        </tr>
+
+        <tr class="winner__table" class="row2">
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+
+         
+        </tr>
+            
+          </tbody>
+    </table>
+    </div>
+  </div>
+              </div>
+              
+      
+</main>
+
+
+  </div>
+
+<div id="header-bg" class="results" align="center">
+
+  <main>    
+
+  <div class="left">
+               
+               
+
+<div class="board">
+  <table class="table_x">
+    <tr>
+      <td class="Squares" id="0"></td>
+ 
+       <td class="Squares" id="1"></td>
+
+       <td class="Squares" id="2"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="3"></td>
+       <td class="Squares" id="4"></td>
+       <td class="Squares" id="5"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="6"></td>
+       <td class="Squares" id="7"></td>
+       <td class="Squares" id="8"></td>
+    </tr>
+
+
+  </table> 
+</div>
+  </div>
+             <div class="left">
+
+               <div class="container">
+    <div class="table-responsive">
+    <table class="table table-bordered   table-striped">
+      <thead class="table__head">
+        <tr class="winner__table">
+          <th>Player</th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Number of games</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Wins </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Lose </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Tie</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Winning Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="winner__table">
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+  
+        </tr>
+
+        <tr class="winner__table" class="row2">
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+
+         
+        </tr>
+            
+          </tbody>
+    </table>
+    </div>
+  </div>
+              </div>
+              
+      
+</main>
+
+
+  </div>
+
+<div id="header-bg" class="results" align="center">
+
+  <main>    
+
+  <div class="left">
+               
+               
+
+<div class="board">
+  <table class="table_x">
+    <tr>
+      <td class="Squares" id="0"></td>
+ 
+       <td class="Squares" id="1"></td>
+
+       <td class="Squares" id="2"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="3"></td>
+       <td class="Squares" id="4"></td>
+       <td class="Squares" id="5"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="6"></td>
+       <td class="Squares" id="7"></td>
+       <td class="Squares" id="8"></td>
+    </tr>
+
+
+  </table> 
+</div>
+  </div>
+             <div class="left">
+
+               <div class="container">
+    <div class="table-responsive">
+    <table class="table table-bordered   table-striped">
+      <thead class="table__head">
+        <tr class="winner__table">
+          <th>Player</th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Number of games</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Wins </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Lose </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Tie</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Winning Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="winner__table">
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+  
+        </tr>
+
+        <tr class="winner__table" class="row2">
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+
+         
+        </tr>
+            
+          </tbody>
+    </table>
+    </div>
+  </div>
+              </div>
+              
+      
+</main>
+
+
+  </div>
+
+<div id="header-bg" class="results" align="center">
+
+  <main>    
+
+  <div class="left">
+               
+               
+
+<div class="board">
+  <table class="table_x">
+    <tr>
+      <td class="Squares" id="0"></td>
+ 
+       <td class="Squares" id="1"></td>
+
+       <td class="Squares" id="2"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="3"></td>
+       <td class="Squares" id="4"></td>
+       <td class="Squares" id="5"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="6"></td>
+       <td class="Squares" id="7"></td>
+       <td class="Squares" id="8"></td>
+    </tr>
+
+
+  </table> 
+</div>
+  </div>
+             <div class="left">
+
+               <div class="container">
+    <div class="table-responsive">
+    <table class="table table-bordered   table-striped">
+      <thead class="table__head">
+        <tr class="winner__table">
+          <th>Player</th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Number of games</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Wins </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Lose </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Tie</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Winning Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="winner__table">
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+  
+        </tr>
+
+        <tr class="winner__table" class="row2">
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+
+         
+        </tr>
+            
+          </tbody>
+    </table>
+    </div>
+  </div>
+              </div>
+              
+      
+</main>
+
+
+  </div>
+
+<div id="header-bg" class="results" align="center">
+
+  <main>    
+
+  <div class="left">
+               
+               
+
+<div class="board">
+  <table class="table_x">
+    <tr>
+      <td class="Squares" id="0"></td>
+ 
+       <td class="Squares" id="1"></td>
+
+       <td class="Squares" id="2"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="3"></td>
+       <td class="Squares" id="4"></td>
+       <td class="Squares" id="5"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="6"></td>
+       <td class="Squares" id="7"></td>
+       <td class="Squares" id="8"></td>
+    </tr>
+
+
+  </table> 
+</div>
+  </div>
+             <div class="left">
+
+               <div class="container">
+    <div class="table-responsive">
+    <table class="table table-bordered   table-striped">
+      <thead class="table__head">
+        <tr class="winner__table">
+          <th>Player</th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Number of games</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Wins </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Lose </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Tie</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Winning Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="winner__table">
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+  
+        </tr>
+
+        <tr class="winner__table" class="row2">
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+
+         
+        </tr>
+            
+          </tbody>
+    </table>
+    </div>
+  </div>
+              </div>
+              
+      
+</main>
+
+
+  </div>
+
+
+<div id="header-bg" class="results" align="center">
+
+  <main>    
+
+  <div class="left">
+               
+               
+
+<div class="board">
+  <table class="table_x">
+    <tr>
+      <td class="Squares" id="0"></td>
+ 
+       <td class="Squares" id="1"></td>
+
+       <td class="Squares" id="2"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="3"></td>
+       <td class="Squares" id="4"></td>
+       <td class="Squares" id="5"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="6"></td>
+       <td class="Squares" id="7"></td>
+       <td class="Squares" id="8"></td>
+    </tr>
+
+
+  </table> 
+</div>
+  </div>
+             <div class="left">
+
+               <div class="container">
+    <div class="table-responsive">
+    <table class="table table-bordered   table-striped">
+      <thead class="table__head">
+        <tr class="winner__table">
+          <th>Player</th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Number of games</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Wins </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Lose </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Tie</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Winning Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="winner__table">
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+  
+        </tr>
+
+        <tr class="winner__table" class="row2">
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+
+         
+        </tr>
+            
+          </tbody>
+    </table>
+    </div>
+  </div>
+              </div>
+              
+      
+</main>
+
+
+  </div>
+
+
+<div id="header-bg" class="results" align="center">
+
+  <main>    
+
+  <div class="left">
+               
+               
+
+<div class="board">
+  <table class="table_x">
+    <tr>
+      <td class="Squares" id="0"></td>
+ 
+       <td class="Squares" id="1"></td>
+
+       <td class="Squares" id="2"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="3"></td>
+       <td class="Squares" id="4"></td>
+       <td class="Squares" id="5"></td>
+    </tr>
+
+    <tr>
+       <td class="Squares" id="6"></td>
+       <td class="Squares" id="7"></td>
+       <td class="Squares" id="8"></td>
+    </tr>
+
+
+  </table> 
+</div>
+  </div>
+             <div class="left">
+
+               <div class="container">
+    <div class="table-responsive">
+    <table class="table table-bordered   table-striped">
+      <thead class="table__head">
+        <tr class="winner__table">
+          <th>Player</th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Number of games</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Wins </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Lose </th>
+          <th><i class="fa fa-user" aria-hidden="true"></i>Tie</th>
+         <th><i class="fa fa-user" aria-hidden="true"></i>Winning Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="winner__table">
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+          <td class="row1">x </td>
+  
+        </tr>
+
+        <tr class="winner__table" class="row2">
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+          <td class="row2">x </td>
+
+         
+        </tr>
+            
+          </tbody>
+    </table>
+    </div>
+  </div>
+              </div>
+              
+      
+</main>
+
+
+  </div>
+
+
+  <div id="header-bg" class="pie-chart" align="center">
+
+  <main>    
+
+  <h1>Player One </h1>
+  <div class="left">
+
+    <ul data-pie-id="my-cool-chart">
+  <li class="p1" data-value="87.5">Winning Percentage</li>
+  <li class="p1" data-value="12.5">Tie Percentage</li>
+  <li class="p1" data-value="0">Losing Percentage</li>
+  
+</ul>
+<div id="my-cool-chart"></div>
+</div>
+
+<h1>Player  Two</h1>
+ <div class="left">
+
+    <ul data-pie-id="my-cool">
+  <li class="p2" data-value="0">Winning Percentage</li>
+  <li class="p2" data-value="12.5">Tie Percentage</li>
+  <li class="p2" data-value="87.5">Losing Percentage</li>
+  
+</ul>
+<div id="my-cool"></div>
+</div>
+
+
+
+<script>
+  Pizza.init(document.body, {
+  donut: false,
+  donut_inner_ratio: 0.4, // between 0 and 1
+  percent_offset: 30, // relative to radius
+  /*stroke_color: '#333',*/
+  stroke_width: 0,
+  show_percent: false, // show or hide the percentage on the chart.
+  animation_speed: 500,
+  animation_type: 'elastic' // options: backin, backout, bounce, easein, 
+});
+
+</script>
+</main>
+</div>
+
+  
+        <script  src="second.js" ></script>
+
+
+  </body>
+</html>

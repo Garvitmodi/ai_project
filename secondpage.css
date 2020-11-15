@@ -1,0 +1,215 @@
+
+.table_x td 
+{
+  background-color:blue;
+  border-radius:25%;
+  opacity: 0.7;
+  width:50px;
+  height:50px;
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+  color:black;
+  font-size: 2.5rem;
+}
+
+
+
+.text
+{
+    color: black;
+    opacity: 1;
+    font-size: 2rem;
+    
+    background-color: transparent;
+    border: none; 
+}
+
+
+.table_x td:hover
+{
+  opacity:0.4;
+}
+
+.table_x
+{
+  width:300px;
+  height:300px;
+}
+
+
+
+
+body
+{
+  margin: 0px;
+
+}
+
+
+
+h1.whiteheadline 
+{
+
+  margin:0px;
+ 
+}
+
+
+.whiteheadline 
+{
+    font-size: 80px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color:steelblue;
+}
+
+.header-rectangle 
+{ 
+    background-color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+#header-bg 
+{
+background-image:  white;
+background-repeat:no-repeat;
+height:541px;
+background-repeat: no-repeat;
+background-color: #ffffff;
+background-attachment: fixed;
+background-position: top center;
+background-size: cover;
+position: relative;
+}
+
+
+
+main
+{
+
+  text-align: left;
+  text-decoration: none;
+  font-family: helvetica;
+  padding-left: 70px;
+  
+}
+
+
+.left
+{
+  display: inline-block;
+  float:left;
+  width:45%;
+}
+
+@media only screen and (max-width: 900px) {
+  .left {
+   width: 100%;
+  }
+}
+
+  
+
+
+
+
+.table__head
+{
+
+color: #FFF;
+font-weight: 700;
+background: #9b4085;
+background: -moz-linear-gradient(-45deg, #9b4085 0%, #608590 100%);
+background: -webkit-linear-gradient(-45deg, #9b4085 0%,#608590 100%);
+background: linear-gradient(135deg, #9b4085 0%,#608590 100%);
+white-space: nowrap;
+}
+
+
+.table-bordered td, .table-bordered th
+{
+border: 0px solid #FFF;
+}
+
+
+
+
+.winner__table
+{
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 567px) {
+
+    .winner__table
+    {
+
+    font-size: 12px;
+
+    }
+  
+}
+
+
+.container
+ {
+  padding: 2rem 0rem;
+}
+
+h4 {
+  margin: 2rem 0rem 1rem;
+}
+
+
+[data-pie-id] li:nth-child(0) {
+  color: blue;
+}
+[data-pie-id] li:nth-child(1) {
+  color: #4d00ff;
+}
+[data-pie-id] li:nth-child(2) {
+  color: #9900ff;
+}
+[data-pie-id] li:nth-child(3) {
+  color: #e500ff;
+}
+[data-pie-id] li:nth-child(4) {
+  color: #ff00cc;
+}
+[data-pie-id] li:nth-child(5) {
+  color: #ff0080;
+}
+[data-pie-id] li:nth-child(6) {
+  color: #ff0033;
+}
+
+
+ul[data-pie-id] 
+{
+  list-style: none;
+  padding: 10px;
+}
+#my-cool-chart {
+  width:300px;
+}
+ul, #my-cool-chart {
+  float:left;
+}
+
+
+#my-cool {
+  width:300px;
+}
+ul, #my-cool {
+  float:left;
+}
+
+ul, #my-cool
+{
+ list-style: none;
+  padding: 10px;
+}
+
+}

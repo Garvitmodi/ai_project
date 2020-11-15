@@ -20,7 +20,7 @@
     else
        path.points =  minimaxFxn(newBoard, ai).points;
     newBoard[availablePlaces[i]] = path.index;
-    if ((player === ai && path.points === 10) || (player === human && path.points === -10))
+    if ((player === ai && path.points === 1) || (player === human && path.points === -1))
       return path;
     else 
       paths.push(path);
