@@ -1,3 +1,4 @@
+// We will include functions from other files
 function include(file) { 
   
   var script  = document.createElement('script'); 
@@ -9,7 +10,7 @@ function include(file) {
   
 } 
   
-/* Include Many js files */
+/* Include functions as distributing codes are clear to read */
 include('./chooseSymbol.js');
 include('./turns.js');
 include('./minimaxFxn.js');
@@ -19,8 +20,11 @@ include('./checkingTie.js');
 include('./results.js');
 
 let mainBoard;
+// Original Board
 let human ='O';
 let ai = 'X';
+
+// winning Combinations thorough which win can be possible
 const winningList =[
   [0, 1, 2],
   [3, 4, 5],
@@ -32,11 +36,13 @@ const winningList =[
   [0, 3, 6]
 ];
 
+
 const blocks = document.querySelectorAll('.Squares');
 
 startGame();
 
 
+// we will setup intial things required for new game
 function startGame() {
   h1=document.querySelector('h1');
   h1.style.background='#353232';
@@ -46,7 +52,7 @@ function startGame() {
   for (let i = 0; i < blocks.length; i++) {
     blocks[i].innerText = '';
     blocks[i].style.removeProperty('background-color');
-  }
+  } 
 }
 
 

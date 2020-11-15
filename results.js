@@ -1,4 +1,5 @@
-
+// When someOne wins game then this function will display results and change some html and css
+// to show results
 function results(gameWon){
   for (let index of winningList[gameWon.index]) {
     document.getElementById(index).style.backgroundColor = 
@@ -12,6 +13,7 @@ function results(gameWon){
   announceWinner(gameWon.player === human ? "You win!" : "You lose");
 }
 
+// This function will show result who win on webpage
 function announceWinner(who) {
   document.querySelector(".finishGame").style.display = "inline-block";
   document.querySelector(".finishGame .text").innerText = who;
