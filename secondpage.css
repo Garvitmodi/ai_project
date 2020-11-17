@@ -47,6 +47,7 @@ body
 {
   margin: 0px;
   font-family:"Montserrat";
+  background-color: grey;
 
 }
 
@@ -60,14 +61,19 @@ h1.whiteheadline
 }
 
 
-.whiteheadline 
-{
-    font-size: 80px;
-    font-family: "Open Sans";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    background-color:steelblue;
+.whiteheadline {
+  font-size: 60px;
+  font-family: "Montserrat";
+  text-align: center;
+  color: white;
+  margin: 0;
+  background: ;
+  font-weight: normal;
+  line-height: 0.9;
+  text-transform: uppercase;
+  padding: 25px 0;
 }
+
 
 .header-rectangle 
 { 
