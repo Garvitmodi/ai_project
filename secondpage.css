@@ -46,6 +46,7 @@ background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);
 body
 {
   margin: 0px;
+  font-family:"Montserrat";
 
 }
 
@@ -216,4 +217,3 @@ ul, #my-cool
   padding: 10px;
 }
 
-}
