@@ -2,7 +2,7 @@
 td {
   background-color:#f4f9fe;
   border-radius:25%;
-      opacity: 0.8;
+  opacity: 0.8;
   width:50px;
   height:50px;
   text-align:center;
@@ -34,11 +34,11 @@ table{
 
 .table_overlay{
   position:absolute;
-    top: 50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-    width:300px;
+  width:300px;
   height:300px;
 }
 
@@ -67,19 +67,20 @@ h1.whiteheadline
 {
 
   margin:0px;
+
 }
 
 
 
 .whiteheadline {
-  font-size: 40px;
+  font-size: 60px;
   font-family: "Montserrat";
   text-align: center;
   color: white;
   margin: 0;
   background: ;
   font-weight: normal;
-  line-height: 1.1;
+  line-height: 0.9;
   text-transform: uppercase;
   padding: 25px 0;
 }
