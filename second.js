@@ -38,6 +38,7 @@ const rowOne = document.querySelectorAll('.row1');
 const rowTwo = document.querySelectorAll('.row2');
 const piechart = document.querySelector('.pie-chart');
 const p1 = document.querySelectorAll('.p1');
+let message= document.querySelector('#message');
 
 startGame();
 
@@ -62,12 +63,15 @@ function getInputValue(){
             // Selecting the input element and get its value 
             var inputVal = document.getElementById("myInput").value;
             let n=Number(inputVal); 
-           
+           message.innerText="";
            console.log(n);
             if(n>0)
             calculate(n);
-            else
-            console.log("Number of Rounds should be greater than 0");    
+            else{
+            	console.log("Number of Rounds should be greater than 0");
+            	message.innerText="Number of Rounds should be greater than 0 !";
+            }
+                
         }
 
 // This function will calculate results for each place and show them in a table 

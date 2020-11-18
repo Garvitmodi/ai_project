@@ -47,7 +47,7 @@ body
 {
   margin: 0px;
   font-family:"Montserrat";
-  background-color: grey;
+  background-color: gainsboro;
 
 }
 
@@ -67,7 +67,7 @@ h1.whiteheadline
   text-align: center;
   color: white;
   margin: 0;
-  background: ;
+ 
   font-weight: normal;
   line-height: 0.9;
   text-transform: uppercase;
@@ -88,7 +88,7 @@ background-image:  white;
 background-repeat:no-repeat;
 height:541px;
 background-repeat: no-repeat;
-background-color: #ffffff;
+  background-color: gainsboro;
 background-attachment: fixed;
 background-position: top center;
 background-size: cover;
@@ -105,6 +105,10 @@ main
   font-family: helvetica;
   padding-left: 70px;
   
+}
+
+#message {
+  text-align: center;
 }
 
 
